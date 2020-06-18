@@ -24,7 +24,10 @@ const checkJwt = jwt({
 });
 
 // Define an endpoint that must be called with an access token
-app.get("/", checkJwt, (req, res) => {
+app.get("/api/external", checkJwt, (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', "*")
+  res.setHeader('Access-Control-Allow-Methods', "*")
+  res.setHeader('Access-Control-Allow-Headers', "Origin, X-Requested-With, Content-Type, Accept")
   res.send({
     msg: "Your Access Token was successfully validated!"
   });
