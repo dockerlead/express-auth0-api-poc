@@ -1,0 +1,16 @@
+{
+  "name": "express-auth0-api-poc",
+  "version": "1.0.0",
+  "description": "Auth0 API call POC Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "CrazyOptimist",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "jwks-rsa": "^1.8.0"
+  }
+}
